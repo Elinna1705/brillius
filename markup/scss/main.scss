@@ -1,0 +1,57 @@
+/**
+ * Description: main styles.
+ * Version: 1.0.0
+ * Last update: 25.08.2016
+ * Author: aglovlyuk@gmail.co
+ */
+
+$breakpoints: (
+	'screen-xs': 480px,
+	'screen-sm': 768px,
+	'screen-md': 992px,
+	'screen-lg': 1200px
+);
+// keywords
+$media-expressions: (
+	'screen': 'screen',
+	'print': 'print',
+	'handheld': 'handheld',
+	'landscape': '(orientation: landscape)',
+	'portrait': '(orientation: portrait)',
+	'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+	'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
+// ligatured operators ≥ ≤
+
+@import 'base/include-media';
+
+@import "bootstrap-custom";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+@import 'base/mixins';
+@import 'base/helpers';
+
+@import 'buttons';
+
+.main-nav{
+	background:#174365;
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.promo{
+	background:#2f87cb;
+	border-bottom: 1px solid #fff;
+}
+
+.skills{
+	background:#cb542f;
+	border-bottom: 1px solid #fff;
+}
+.team{
+	background:#72af3c;
+	border-bottom: 1px solid #fff;
+}
