@@ -35,6 +35,19 @@ $media-expressions: (
 
 @import 'buttons';
 
+
+section{
+	border-bottom: 1px solid #fff
+}
+
+.img-border-wh{
+	border: 7px white solid;
+	box-shadow: 0 0 3px rgba(0, 0, 0, .6);
+	margin: 12px 0;
+}
+
+
+
 .main-nav{
 	background:#174365;
 	max-width: 940px;
@@ -42,16 +55,105 @@ $media-expressions: (
 	padding: 10px;
 }
 
+.heading{
+	font-family: $headings-font-family;
+	h2{
+		font-size: $font-size-h2;
+	}
+	.title{
+		font-size: 22px;
+		font-weight: 400;
+		padding: 5px 20px;
+		border-radius: 20px;
+		box-shadow: inset 0px 0px 0px 999px rgba(0, 0, 0, 0.25);
+	}
+}
+
+
 .promo{
 	background:#2f87cb;
-	border-bottom: 1px solid #fff;
+
 }
 
 .skills{
 	background:#cb542f;
-	border-bottom: 1px solid #fff;
+	
 }
+
 .team{
 	background:#72af3c;
-	border-bottom: 1px solid #fff;
+	team-decor-title{
+		display: block;
+		overflow: hidden
+	}
+	.team-decor{
+		display: inline-block;
+		position: relative;
+		padding: 0 13px;
+		&:before,
+		&:after{
+			@include ycenter;
+			content: '';
+			border-top: solid #fff;
+			border-width: 1px 0;
+			left: 100%;
+			right: -999px;
+		}
+		&:before{
+		right: 100%;
+		left: -999px;
+		}
+	}
+
+}
+
+.portfolio{
+	background:#cc9031;
+	padding-bottom: 70px;
+	
+	.heading {
+		.title{
+		}
+		ul{
+			padding-top: 50px;
+			padding-bottom: 20px;
+		}
+		li{
+		list-style: none;
+		display: inline-block;
+		/*position: relative;*/
+		font-weight: bold;
+		/*line-height: 48px;*/
+		/*font-family: font-family-sans-serif;*/
+		padding: 0 15px;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+		}
+		li:not(:last-child):after{
+			content: "/";
+			padding-left: 20px;
+		}
+		a{
+			text-decoration: none;
+			padding: 7px 0;
+		}
+		 a:hover,
+		 a.active{
+			border-top: 3px solid rgba(255, 255, 255, .6);
+			border-bottom: 3px solid rgba(255, 255, 255, .6);
+			color: rgba(255, 255, 255, .8);
+		}
+	}
+}
+
+.blog{
+	background:#37a3c7;
+	
+}
+
+.Shortcodes{
+	background:#45b591;
+}
+
+.contact{
+	background:#c6a739;
 }

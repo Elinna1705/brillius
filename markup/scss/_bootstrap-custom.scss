@@ -6,17 +6,17 @@ $text-color:					#fff;
 // color-name: http://name-of-color.com/
 /*$brand-primary:					#333;
 $brand-danger:					#ba6767;
-$brand-success:					#67af45;
+$brand-success:					#67af45;*/
 $link-color:					$text-color;
-$flamingo:						#f15b26;*/
+
 
 $font-size-base:				18px;
-/*$line-height-base:				1.1875;
-$font-size-h1:					ceil($font-size-base * 3.75); //~60px
-$font-size-h2:					ceil($font-size-base * 3.125); //~50px
-$font-size-h3:					ceil($font-size-base * 2.5); //~40px
-$font-size-h4:					ceil($font-size-base * 2.25); //~36px
-$font-size-h5:					ceil($font-size-base * 1.875); //~30px
+$line-height-base:				1.3333;
+/*$font-size-h1:					ceil($font-size-base * 3.75); //~60px*/
+$font-size-h2:					ceil($font-size-base * 4); //~72px
+/*$font-size-h3:					ceil($font-size-base * 2.5); //~40px*/
+$font-size-h4:					ceil($font-size-base * 1.222); //~22px
+/*$font-size-h5:					ceil($font-size-base * 1.875); //~30px
 $font-size-h6:					ceil($font-size-base * 1.25); //~20px
 
 //$container-large-desktop:		1170px;
@@ -29,13 +29,13 @@ $input-color-placeholder:		$input-color;
 $input-border-radius:			10px;
 $border-radius-base:			10px;
 $border-radius-large:			0;
-$border-radius-small:			0;
+$border-radius-small:			0;*/
 
 $font-family-sans-serif:		Oxygen, Arial, sans-serif;
-$font-family-sans-serif-alt:	Questrial, Arial, sans-serif;
-$headings-font-family:			$font-family-sans-serif-alt;
+$font-family-serif:				Coustard, "Times New Roman", serif;
+$headings-font-family:			$font-family-serif;
 
-.progress{
+/*.progress{
 	background:#a2602b;
 	box-shadow: inset -1px 1px 2px rgba(0,0,0,0.37), 1px 2px 2px rgba(255,255,255,0.37);
 }
