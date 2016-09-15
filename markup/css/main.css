@@ -48,7 +48,27 @@ $border-radius-small:			0;*/
   overflow: hidden;
 }
 
-section {
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+.icon-facebook {
+  width: 0.587890625em;
+}
+
+.border-bt {
   border-bottom: 1px solid #fff;
 }
 
@@ -64,6 +84,41 @@ section {
   max-width: 940px;
   margin: 0 auto;
   padding: 10px;
+}
+
+.decor-overflow {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.decor {
+  display: inline-block;
+  position: relative;
+  padding: 0 13px;
+}
+
+.decor:before,
+.decor:after {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+     transform: translate(0, -50%);
+  content: '';
+  height: 5px;
+  border: solid #fff;
+  border-width: 1px 0;
+  -webkit-box-shadow: 0 1px rgba(0, 0, 0, 0.14) inset, 0 1px rgba(0, 0, 0, 0.14);
+          box-shadow: 0 1px rgba(0, 0, 0, 0.14) inset, 0 1px rgba(0, 0, 0, 0.14);
+  left: 100%;
+  right: -999px;
+}
+
+.decor:before {
+  right: 100%;
+  left: -999px;
 }
 
 .heading {
@@ -92,27 +147,56 @@ section {
   background: #cb542f;
 }
 
+.skills blockquote {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.skills blockquote p:not(:last-child) {
+  position: relative;
+  padding: 55px 0 12px 40px;
+  /*line-height: 24px;
+				margin-bottom: 16px;*/
+}
+
+.skills blockquote p:not(:last-child):before {
+  content: '"';
+  font-size: 72px;
+  font-style: italic;
+  position: absolute;
+  top: 13px;
+  left: -9px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.skills blockquote p:last-child {
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  font-style: normal;
+}
+
 .team {
   background: #72af3c;
 }
 
-.team team-decor-title {
-  display: block;
-  overflow: hidden;
-}
-
-.team .team-decor {
+.team h4 {
   display: inline-block;
   position: relative;
-  padding: 0 13px;
+  padding: 0 5px;
 }
 
-.team .team-decor:before, .team .team-decor:after {
+.team h4:before,
+.team h4:after {
   position: absolute;
   top: 50%;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+     transform: translate(0, -50%);
   content: '';
   border-top: solid #fff;
   border-width: 1px 0;
@@ -120,7 +204,7 @@ section {
   right: -999px;
 }
 
-.team .team-decor:before {
+.team h4:before {
   right: 100%;
   left: -999px;
 }

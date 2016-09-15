@@ -34,9 +34,10 @@ $media-expressions: (
 @import 'base/helpers';
 
 @import 'buttons';
+@import 'icons';
 
 
-section{
+.border-bt{
 	border-bottom: 1px solid #fff
 }
 
@@ -47,13 +48,41 @@ section{
 }
 
 
-
 .main-nav{
 	background:#174365;
 	max-width: 940px;
 	margin: 0 auto;
 	padding: 10px;
 }
+
+.decor-overflow{
+	display: block;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.decor{
+	display: inline-block;
+	position: relative;
+	padding: 0 13px;
+	&:before,
+	&:after{
+		@include ycenter;
+		content: '';
+		height: 5px;
+		border: solid #fff;
+		border-width: 1px 0;
+		box-shadow: 0 1px rgba(#000, .14) inset, 0 1px rgba(#000, .14);
+		left: 100%;
+		right: -999px;
+	}
+	&:before{
+	right: 100%;
+	left: -999px;
+	}
+}
+
+
 
 .heading{
 	font-family: $headings-font-family;
@@ -77,19 +106,46 @@ section{
 
 .skills{
 	background:#cb542f;
-	
+	blockquote{
+		font-size: 18px;
+		padding: 0;
+		margin: 0;
+		border: 0;
+		p{
+			&:not(:last-child){
+				position: relative;
+				padding: 55px 0 12px 40px;
+				/*line-height: 24px;
+				margin-bottom: 16px;*/
+				&:before{
+					content: '"';
+					font-size: 72px;
+					font-style: italic;
+					position: absolute;
+					top: 13px;
+					left: -9px;
+					color: rgba(255, 255, 255, .4);
+				}
+			}
+
+			&:last-child{
+				float: right;
+				font-size: 18px;
+				font-weight: bold;
+				text-align: left;
+				font-style: normal;
+			}
+		}
+	}
 }
 
 .team{
 	background:#72af3c;
-	team-decor-title{
-		display: block;
-		overflow: hidden
-	}
-	.team-decor{
+	
+	h4{
 		display: inline-block;
 		position: relative;
-		padding: 0 13px;
+		padding: 0 5px;
 		&:before,
 		&:after{
 			@include ycenter;
@@ -103,8 +159,7 @@ section{
 		right: 100%;
 		left: -999px;
 		}
-	}
-
+	}	
 }
 
 .portfolio{
