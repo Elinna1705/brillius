@@ -1,0 +1,77 @@
+.shortcodes{
+	background:#45b591;
+	padding-bottom: 72px;
+	@include media('>=screen-md'){
+		padding-top: 58px;
+	}
+	.shortcodes-content{
+		padding: 38px 50px 0 50px;
+
+		.columns{
+			.columns-row{
+				padding-top: 5px ;
+			}
+		}
+
+		.elements{
+			padding-top: 12px;
+			.elements-row{
+				ul, ol{
+					padding-top: 8px;
+					font-size: $font-size-xs;
+					padding-left: 15px;
+					margin-bottom: 25px;
+					li{
+						margin-bottom: 6px;
+					}
+				}
+				blockquote{
+					padding-left: 36px;
+					padding-top: 32px;
+					font-weight: normal;
+					&:before{
+						top:-10px;
+						left: 10px;
+					}
+				}
+			}
+		}
+
+		.controls{
+			.controls-row{
+				padding-top: 18px;
+				padding-left: 15px;
+			}
+			
+		}
+		.buttons{
+			padding-top: 37px;
+			h4{
+				margin-bottom: 8px;
+			}
+			.buttons-row{
+
+			}
+			.btn-container{
+				padding-top: 12px;
+				.btn{
+					vertical-align: top;
+					@include media('<screen-md'){
+						display: block;
+						margin-bottom: 10px;
+					}
+				}
+			}
+			
+		}
+		.boxes{
+			padding-top: 20px;
+			.boxes-row{
+				padding-top: 10px;
+				.light-panel{
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}

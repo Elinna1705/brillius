@@ -1,0 +1,1 @@
+[0919/030643:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: Попытка доступа к процессу, выполняющему процедуру завершения.  (0xc000010a)
