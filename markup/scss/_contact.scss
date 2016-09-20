@@ -1,0 +1,63 @@
+.contact{
+	background:#c6a739;
+	padding-top: 72px;
+	padding-bottom: 41px;
+
+	
+	
+		.contact-map{
+			margin-top: 48px;
+			margin-left:49px;
+
+			min-width: 592px;
+			min-height: 355px;
+			border: 6px solid #937c2a;
+			border-radius: 6px;
+
+		@include media('>=screen-sm'){
+			width: 375px;
+			height: 240px;
+			}
+
+		@include media('>=screen-md'){
+			width: 583px;
+			height: 347px;
+			}
+		}
+		.contact-info{
+			margin-top: 16px;
+			margin-left: 49px;
+			h4,p{
+				margin-bottom: 18px;
+			}
+		}
+
+	.contacts{
+		padding-top: 34px;
+		
+		h4{
+			font-weight:400px;
+		}
+		input,textarea{
+		 margin: 12px 0 5px 0;
+		 }
+			input{
+				background: rgba(255, 255, 255, .26);
+			  }
+			textarea{
+				min-width: 407px;
+				border: none;
+				background: rgba(255, 255, 255, .26);
+				border-radius: 20px;
+				height: 180px;
+				color: #fff;
+				padding-left: 20px;
+				margin-bottom:20px;
+				}
+				ul{
+					width: 310px;
+				}
+		
+	
+	}
+}
