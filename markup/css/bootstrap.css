@@ -12,7 +12,7 @@ $brand-success:					#67af45;*/
 /*$font-size-h3:					ceil($font-size-base * 2.5); //~40px*/
 /*$font-size-h6:					ceil($font-size-base * 1.25); //~20px
 
-//$container-large-desktop:		1070px;
+$container-large-desktop:		1070px;
 
 // inputs
 $input-bg:						#207172;

@@ -1,15 +1,28 @@
-.footer{
-	background:#fff;
-	 padding-top: 48px;
-	padding: 5px;
-	.nav{
-		li{
-			display:inline-block;
+footer {
+	background: #fff;
+	padding: 55px 5px 5px 5px;
+	 .navbar-footer {
+ 			 padding-top: 17px;
+		}
+
+	.nav {
+		text-transform: uppercase;
+		li {
+		  display: inline-block;
+		  a {
+			  color: #666;
+			  padding: 11px 11px;
+			  font-size: 16px;
+			  font-weight: 700;
+			}
+
 		}
 	}
-	.footer-container{
-		a{
-			color: #666;
-		}
-	}
+
 }
+
+
+
+
+
+

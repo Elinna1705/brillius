@@ -4,8 +4,12 @@
 	@include media('>=screen-lg'){
 		padding-top: 67px;
 	}
+	h2{
+		margin-bottom: 7px;
+	}
 	.skills{
 		padding-top: 45px;
+		padding-bottom: 5px;
 		.skill-container{
 			display: inline-block;
 			border: solid 8px white; 
@@ -27,4 +31,8 @@
 			}
 		}
 	}
+	p{
+		margin-bottom: 8px;
+	}
+
 }
