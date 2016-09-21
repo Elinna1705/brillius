@@ -1,13 +1,8 @@
-// custom variables and override bootstrap variables
 
-/*$body-bg:						#333;*/
+$body-bg:						#37a3c7;
 $white-color: #FFF;
 $text-color:					$white-color;
 
-// color-name: http://name-of-color.com/
-/*$brand-primary:					#333;
-$brand-danger:					#ba6767;
-$brand-success:					#67af45;*/
 $link-color:					$text-color;
 
 
@@ -18,40 +13,17 @@ $font-size-xs:					ceil($font-size-base * 0.7777); //~14px
 
 
 $line-height-base:				1.3333;
-/*$font-size-h1:					ceil($font-size-base * 3.75); //~60px*/
 $font-size-h2:					ceil($font-size-base * 2.6666); //~48px
-/*$font-size-h3:					ceil($font-size-base * 2.5); //~40px*/
 $font-size-h4:					ceil($font-size-base * 1.7222); //~31px
 $font-size-h5:					ceil($font-size-base * 1.1111); //~20px
-/*$font-size-h6:					ceil($font-size-base * 1.25); //~20px
 
-$container-large-desktop:		1070px;
-
-// inputs
-$input-bg:						#207172;
-$input-color:					$text-color;
-$input-color-placeholder:		$input-color;
-
-$input-border-radius:			10px;
-$border-radius-base:			10px;
-$border-radius-large:			0;
-$border-radius-small:			0;*/
 
 $font-family-sans-serif:		Oxygen, Arial, sans-serif;
-$font-family-serif:				Coustard, "Times New Roman", serif;
+$font-family-serif:				Coustard, "Times New Roman",Georgia, serif;
 $headings-font-family:			$font-family-serif;
 
 
-/*.progress{
-	background:#a2602b;
-	box-shadow: inset -1px 1px 2px rgba(0,0,0,0.37), 1px 2px 2px rgba(255,255,255,0.37);
-}
 
-.progress-bar-skill{
-	background: linear-gradient(to bottom, #e0b283 0%,#cb7e4d 100%);
-	border-radius: 10px;
-}
-*/
 
 $color-dark-1: rgba(0,0,0,0.25);
 $color-dark-2: rgba(0,0,0,0.5);
@@ -60,103 +32,4 @@ $color-light-2:rgba(255, 255, 255, 0.5);
 $color-light-3:rgba(255, 255, 255, 0.75);
 
 
-h4, h5{
-	font-family: $font-family-sans-serif;
-}
-h5{
-	font-weight: 700;
-}
 
-.panel-group{
-	.panel-default {
-		&.panel{
-			background: transparent;
-			border: none;
-			border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-			&:last-child{
-				border: 0;
-			}
-			.panel-title {
-				font-size:$font-size-base; 
-				font-weight: normal;
-				a{
-					position: relative;
-					text-decoration: none;
-					cursor: pointer;
-					&:after{
-						content: '+';
-						position: absolute;
-						font-family: Oxygen, Arial, serif;
-						font-weight: bold;
-						font-size: 30px;
-						top: -7px;
-						left: -30px;
-						color: #fff;
-					}
-					&:not(.collapsed):after{
-						content: '-';
-					}
-				}
-			}
-
-			 .panel-heading{
-				background:transparent;
-				color:$text-color;
-				padding: 12px 15px;
-
-				&+.panel-collapse{
-					.panel-body{
-						border-top: none;
-						font-size: $font-size-xs;
-						margin-left: -30px;
-					}
-				}
-			}
-		}
-	}
-}
-
-@mixin tab-active{
-  background: rgba(0, 0, 0, .4);
-        border:none;
-        color:$text-color;
-}
-
-.nav-tabs{
-	border-bottom: none;
-	padding-left: 20px;
-	padding-bottom: 20px;
-	
-	li{
-		margin-right: 10px;
-
-		&.active{
-			a{
-				@include tab-active;
-
-				&:focus{
-					@include tab-active;
-				}
-			}
-		}
-		 a{
-			border: none;
-			background: rgba(0, 0, 0, .26);
-			border-radius: 20px;
-			padding: 10px 28px;
-			color:$text-color;
-			&:hover{
-				@include tab-active;
-			}
-			&:focus{
-				@include tab-active;
-			}
-		}
-
-	}
-	
-}
-
-.tab-content{
-		padding-left:20px;
-	}

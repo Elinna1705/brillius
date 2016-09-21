@@ -4,138 +4,6 @@
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-/*$body-bg:						#333;*/
-/*$brand-primary:					#333;
-$brand-danger:					#ba6767;
-$brand-success:					#67af45;*/
-/*$font-size-h1:					ceil($font-size-base * 3.75); //~60px*/
-/*$font-size-h3:					ceil($font-size-base * 2.5); //~40px*/
-/*$font-size-h6:					ceil($font-size-base * 1.25); //~20px
-
-$container-large-desktop:		1070px;
-
-// inputs
-$input-bg:						#207172;
-$input-color:					$text-color;
-$input-color-placeholder:		$input-color;
-
-$input-border-radius:			10px;
-$border-radius-base:			10px;
-$border-radius-large:			0;
-$border-radius-small:			0;*/
-/*.progress{
-	background:#a2602b;
-	box-shadow: inset -1px 1px 2px rgba(0,0,0,0.37), 1px 2px 2px rgba(255,255,255,0.37);
-}
-
-.progress-bar-skill{
-	background: linear-gradient(to bottom, #e0b283 0%,#cb7e4d 100%);
-	border-radius: 10px;
-}
-*/
-h4, h5 {
-  font-family: Oxygen, Arial, sans-serif;
-}
-
-h5 {
-  font-weight: 700;
-}
-
-.panel-group .panel-default.panel {
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-.panel-group .panel-default.panel:last-child {
-  border: 0;
-}
-
-.panel-group .panel-default.panel .panel-title {
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.panel-group .panel-default.panel .panel-title a {
-  position: relative;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.panel-group .panel-default.panel .panel-title a:after {
-  content: '+';
-  position: absolute;
-  font-family: Oxygen, Arial, serif;
-  font-weight: bold;
-  font-size: 30px;
-  top: -7px;
-  left: -30px;
-  color: #fff;
-}
-
-.panel-group .panel-default.panel .panel-title a:not(.collapsed):after {
-  content: '-';
-}
-
-.panel-group .panel-default.panel .panel-heading {
-  background: transparent;
-  color: #FFF;
-  padding: 12px 15px;
-}
-
-.panel-group .panel-default.panel .panel-heading + .panel-collapse .panel-body {
-  border-top: none;
-  font-size: 14px;
-  margin-left: -30px;
-}
-
-.nav-tabs {
-  border-bottom: none;
-  padding-left: 20px;
-  padding-bottom: 20px;
-}
-
-.nav-tabs li {
-  margin-right: 10px;
-}
-
-.nav-tabs li.active a {
-  background: rgba(0, 0, 0, 0.4);
-  border: none;
-  color: #FFF;
-}
-
-.nav-tabs li.active a:focus {
-  background: rgba(0, 0, 0, 0.4);
-  border: none;
-  color: #FFF;
-}
-
-.nav-tabs li a {
-  border: none;
-  background: rgba(0, 0, 0, 0.26);
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
-  padding: 10px 28px;
-  color: #FFF;
-}
-
-.nav-tabs li a:hover {
-  background: rgba(0, 0, 0, 0.4);
-  border: none;
-  color: #FFF;
-}
-
-.nav-tabs li a:focus {
-  background: rgba(0, 0, 0, 0.4);
-  border: none;
-  color: #FFF;
-}
-
-.tab-content {
-  padding-left: 20px;
-}
-
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -1523,7 +1391,7 @@ body {
   font-size: 18px;
   line-height: 1.3333;
   color: #FFF;
-  background-color: #fff;
+  background-color: #37a3c7;
 }
 
 input,
@@ -1572,7 +1440,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.3333;
-  background-color: #fff;
+  background-color: #37a3c7;
   border: 1px solid #ddd;
   -webkit-border-radius: 4px;
           border-radius: 4px;
@@ -1621,7 +1489,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: Coustard, "Times New Roman", serif;
+  font-family: Coustard, "Times New Roman", Georgia, serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -2888,7 +2756,7 @@ th {
 }
 
 .table .table {
-  background-color: #fff;
+  background-color: #37a3c7;
 }
 
 .table-condensed > thead > tr > th,
@@ -4868,7 +4736,7 @@ tbody.collapse.in {
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: #555555;
-  background-color: #fff;
+  background-color: #37a3c7;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -4954,7 +4822,7 @@ tbody.collapse.in {
   .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
   .nav-tabs-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #fff;
+    border-bottom-color: #37a3c7;
   }
 }
 
@@ -5970,7 +5838,7 @@ a.badge:hover, a.badge:focus {
   padding: 4px;
   margin-bottom: 23px;
   line-height: 1.3333;
-  background-color: #fff;
+  background-color: #37a3c7;
   border: 1px solid #ddd;
   -webkit-border-radius: 4px;
           border-radius: 4px;

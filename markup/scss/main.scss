@@ -256,22 +256,6 @@ blockquote{
 		border-radius: 50%;
 		background: rgba(0, 0, 0, .4);
 		text-decoration: none;
-		/*&:not(:last-child){
-			margin-right: 4px;
-			font-size: 18px;
-			padding: 0;
-			margin: 0;
-			border: 0;
-		}*/
-		&:before{
-			content: '"';
-			font-size: 72px;
-			font-style: italic;
-			position: absolute;
-			top: -19px;
-			left: -11px;
-			color: rgba(255, 255, 255, .4);
-		}
 		p{
 			font-size:$font-size-base;
 			line-height: 23px;
